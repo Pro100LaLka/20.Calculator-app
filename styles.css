@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --gradient-bg: linear-gradient(
+    60deg,
+    rgb(26, 44, 54),
+    rgb(25, 24, 40) 20%,
+    rgb(25, 24, 40) 70%,
+    rgb(26, 44, 54)
+  );
+  --gradient-surface: linear-gradient(135deg, rgb(50, 58, 73), rgb(36, 40, 55));
+
+  --primary-color: rgb(43, 49, 64);
+  --color-accent: rgb(1, 174, 168);
+  --color-accent-muted: rgb(31, 61, 70);
+
+  --color-text-primary: white;
+  --color-text-accent: rgb(13, 160, 145);
+}
+
+button {
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  font-size: 4rem;
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 100;
+  transition: box-shadow 0.1s ease;
+}
+
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-accent {
+  color: var(--color-text-accent);
+}
+
+.bg-accent-strong {
+  background-color: var(--color-accent);
+}
+
+.operation {
+  background-color: var(--color-accent-muted);
+  color: var(--color-text-accent);
+}
+
+body {
+  height: 100dvh;
+  background: var(--gradient-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background: var(--gradient-surface);
+  width: 500px;
+  display: grid;
+  grid-template-rows: auto 1fr 50% 2%;
+  height: 90dvh;
+  border-radius: 20px;
+  box-shadow: 0 0 50px var(--color-accent-muted);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header button {
+  padding: 2.5rem 3rem;
+  font-size: 3rem;
+}
+
+#menu {
+  border-radius: 20px 0 20px 0;
+}
+
+#history {
+  border-radius: 0 20px 0 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  font-family: "JetBrains Mono", sans-serif;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.equation-area {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  text-align: end;
+}
+
+.result-area {
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  height: 50%;
+  letter-spacing: -4px;
+  text-align: end;
+}
+
+.btns-container {
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  border-top: 2px solid var(--color-accent);
+}
+
+#result {
+  border-radius: 0 0 15px 0;
+}
+
+.upper-row {
+  font-size: 3.2rem;
+  letter-spacing: -3px;
+}
+
+button:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.164);
+}
+
+button:active {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.322);
+}

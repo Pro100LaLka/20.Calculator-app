@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <button class="text-primary bg-accent-strong" id="menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="text-accent" id="history">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+        </button>
+      </header>
+      <section class="input-container">
+        <span class="equation-area text-primary"></span>
+        <span class="result-area text-accent">0</span>
+      </section>
+      <section class="btns-container">
+        <button class="text-accent upper-row" id="ac">AC</button>
+        <button class="text-accent upper-row" id="delete">
+          <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button class="text-accent upper-row" id="swap-sign">+/-</button>
+        <button class="operation" id="divide">&divide;</button>
+        <button class="text-primary number" id="seven">7</button>
+        <button class="text-primary number" id="eight">8</button>
+        <button class="text-primary number" id="nine">9</button>
+        <button class="operation" id="multiply">&times;</button>
+        <button class="text-primary number" id="four">4</button>
+        <button class="text-primary number" id="five">5</button>
+        <button class="text-primary number" id="six">6</button>
+        <button class="operation" id="subtract">&minus;</button>
+        <button class="text-primary number" id="one">1</button>
+        <button class="text-primary number" id="two">2</button>
+        <button class="text-primary number" id="three">3</button>
+        <button class="operation" id="add">&plus;</button>
+        <button class="text-accent" id="percent">&percnt;</button>
+        <button class="text-primary number" id="zero">0</button>
+        <button class="text-primary" id="point">.</button>
+        <button class="text-primary bg-accent-strong" id="result">
+          &equals;
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
